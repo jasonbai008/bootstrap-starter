@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Bootstrap Starter</title>
-    <!-- 引入 Bootstrap CSS 4.6.0 -->
+    <!-- 引入 Bootstrap CSS 5.3.0 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- 自定义样式 -->
     <style>
-        .column {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
+        .column {}
+
         .btn a {
             color: #fff;
             text-decoration: none;
@@ -24,32 +20,49 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center mt-4">静态页面模版</h1>
+    <!-- 
+        默认情况下，Bootstrap的container在不同的屏幕尺寸下有以下固定宽度：
+        超小屏幕（<576px）：100%（占满全宽）
+        小屏幕（≥576px）：540px
+        中等屏幕（≥768px）：720px
+        大屏幕（≥992px）：960px
+        超大屏幕（≥1200px）：1140px
+        超超大屏幕（≥1400px）：1320px 
+    -->
+
+    <!-- 不论屏幕的大小如何，container-fluid的宽度始终为100%，即总是占满整个可用的视口宽度。 -->
+    <div class="container-fluid px-4">
+        <h1 class="text-center mt-4">HTML with Bootstrap V5.3</h1>
         <br>
-        <div class="row">
-            <div class="col-md-4 col-sm-12 column">
-                <h2>列 1</h2>
-                <p>这是第一列的内容。</p>
+        <div class="row mb-4 gx-4">
+            <div class="col-md-4 col-sm-12 mb-4 column">
+                <div class="p-3 border bg-light">
+                    <h2>列 1</h2>
+                    <p>这是第一列的内容。</p>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-12 column">
-                <h2>列 2</h2>
-                <p>这是第二列的内容。</p>
+            <div class="col-md-4 col-sm-12 mb-4 column">
+                <div class="p-3 border bg-light">
+                    <h2>列 2</h2>
+                    <p>这是第二列的内容。</p>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-12 column">
-                <h2>列 3</h2>
-                <p>这是第三列的内容。</p>
+            <div class="col-md-4 col-sm-12 mb-4 column">
+                <div class="p-3 border bg-light">
+                    <h2>列 3</h2>
+                    <p>这是第三列的内容。</p>
+                </div>
             </div>
         </div>
         <div class="text-center">
             <button type="button" class="btn btn-primary">
-                <a href="https://v4.bootcss.com/docs/layout/grid/" target="_blank">Bootstrap V4.6 文档</a>
+                <a href="https://www.bootstrap.cn/doc/book/2.html" target="_blank">Bootstrap V5.3 中文文档</a>
             </button>
         </div>
     </div>
     <!-- 引入 jQuery 3.6.0 -->
-    <script src="./js/jquery.min.js"></script>
-    <!-- 引入 Bootstrap JS 4.6.0 集成了所有的工具包，比如 Popper.js -->
+    <!-- <script src="./js/jquery.min.js"></script> -->
+    <!-- 引入 Bootstrap JS 5.3.0 集成了所有的工具包，比如 Popper.js -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- 自定义脚本 -->
     <script>
