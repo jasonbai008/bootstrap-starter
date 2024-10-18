@@ -1,2 +1,2 @@
 # bootstrap-starter
-a html page powered by Bootstrap
+a html template powered by Bootstrap V5.3
